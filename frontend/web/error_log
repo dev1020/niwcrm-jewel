@@ -1,0 +1,209 @@
+[21-Mar-2017 11:40:06 Etc/GMT] PHP Warning:  Uncaught exception 'yii\base\ErrorException' with message 'Undefined variable: res' in /home/saltlake/public_html/frontend/controllers/SmsController.php:98
+Stack trace:
+#0 /home/saltlake/public_html/frontend/controllers/SmsController.php(98): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/home/saltlake/...', 98, Array)
+#1 [internal function]: frontend\controllers\SmsController->actionSendotp()
+#2 /home/saltlake/public_html/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /home/saltlake/public_html/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 /home/saltlake/public_html/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('sendotp', Array)
+#5 /home/saltlake/public_html/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('sms/sendotp', Array)
+#6 /home/saltlake/public_html/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request in /home/saltlake/public_html/frontend/controllers/SmsController.php on line 98
+[21-Mar-2017 11:40:06 Etc/GMT] PHP Fatal error:  Call to a member function getBody() on a non-object in /home/saltlake/public_html/frontend/controllers/SmsController.php on line 98
+[22-Mar-2017 11:34:20 Etc/GMT] PHP Fatal error:  Class 'common\components\Multilevel' not found in /home/saltlake/public_html/frontend/views/bussiness/_form.php on line 72
+[10-Apr-2017 11:05:24 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/saltlakein/public_html/frontend/views/listify/_list.php on line 58
+[22-Jun-2017 15:07:40 UTC] An Error occurred while handling another error:
+exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)' in /home/saltlakein/public_html/vendor/yiisoft/yii2/db/Connection.php:602
+Stack trace:
+#0 /home/saltlakein/public_html/vendor/yiisoft/yii2/db/Connection.php(602): PDO->__construct('mysql:host=loca...', 'saltlakein_user', 'Amity@123', NULL)
+#1 /home/saltlakein/public_html/vendor/yiisoft/yii2/db/Connection.php(544): yii\db\Connection->createPdoInstance()
+#2 /home/saltlakein/public_html/vendor/yiisoft/yii2/db/Connection.php(863): yii\db\Connection->open()
+#3 /home/saltlakein/public_html/vendor/yiisoft/yii2/db/Connection.php(850): yii\db\Connection->getMasterPdo()
+#4 /home/saltlakein/public_html/vendor/yiisoft/yii2/db/Schema.php(478): yii\db\Connection->getSlavePdo()
+#5 /home/saltlakein/public_html/vendor/yiisoft/yii2/db/Connection.php(759): yii\db\Schema->quoteValue('Y')
+#6 /home/saltlakein/public_html/vendor/yiisoft/yii2/db/Command.php(175): yii\db\Connection->quoteValue('Y')
+#7 /home/saltlakein/public_html/vendor/yiisoft/yii2/db/Command.php(869): yii\db\Command->getRawSql()
+#8 /home/saltlakein/public_html/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#9 /home/saltlakein/public_html/vendor/yiisoft/yii2/db/Query.php(210): yii\db\Command->queryAll()
+#10 /home/saltlakein/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#11 /home/saltlakein/public_html/frontend/views/layouts/main.php(248): yii\db\ActiveQuery->all()
+#12 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/View.php(326): require('/home/saltlakei...')
+#13 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/home/saltlakei...', Array)
+#14 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/home/saltlakei...', Array, Object(frontend\controllers\SiteController))
+#15 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#16 /home/saltlakein/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(109): yii\base\Controller->render('error', Array)
+#17 [internal function]: yii\web\ErrorAction->run()
+#18 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/Action.php(92): call_user_func_array(Array, Array)
+#19 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\Action->runWithParams(Array)
+#20 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('error', Array)
+#21 /home/saltlakein/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(93): yii\base\Module->runAction('site/error')
+#22 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(109): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#23 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#24 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)' in /home/saltlakein/public_html/vendor/yiisoft/yii2/db/Connection.php:549
+Stack trace:
+#0 /home/saltlakein/public_html/vendor/yiisoft/yii2/db/Connection.php(863): yii\db\Connection->open()
+#1 /home/saltlakein/public_html/vendor/yiisoft/yii2/db/Connection.php(850): yii\db\Connection->getMasterPdo()
+#2 /home/saltlakein/public_html/vendor/yiisoft/yii2/db/Schema.php(478): yii\db\Connection->getSlavePdo()
+#3 /home/saltlakein/public_html/vendor/yiisoft/yii2/db/Connection.php(759): yii\db\Schema->quoteValue('Y')
+#4 /home/saltlakein/public_html/vendor/yiisoft/yii2/db/Command.php(175): yii\db\Connection->quoteValue('Y')
+#5 /home/saltlakein/public_html/vendor/yiisoft/yii2/db/Command.php(869): yii\db\Command->getRawSql()
+#6 /home/saltlakein/public_html/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/saltlakein/public_html/vendor/yiisoft/yii2/db/Query.php(210): yii\db\Command->queryAll()
+#8 /home/saltlakein/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /home/saltlakein/public_html/frontend/views/layouts/main.php(248): yii\db\ActiveQuery->all()
+#10 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/View.php(326): require('/home/saltlakei...')
+#11 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/home/saltlakei...', Array)
+#12 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/home/saltlakei...', Array, Object(frontend\controllers\SiteController))
+#13 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#14 /home/saltlakein/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(109): yii\base\Controller->render('error', Array)
+#15 [internal function]: yii\web\ErrorAction->run()
+#16 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/Action.php(92): call_user_func_array(Array, Array)
+#17 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\Action->runWithParams(Array)
+#18 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('error', Array)
+#19 /home/saltlakein/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(93): yii\base\Module->runAction('site/error')
+#20 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(109): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#21 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#22 {main}
+Additional Information:
+
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: listify/categories.html' in /home/saltlakein/public_html/vendor/yiisoft/yii2/base/Controller.php:125
+Stack trace:
+#0 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('categories.html', Array)
+#1 /home/saltlakein/public_html/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('listify/categor...', Array)
+#2 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/saltlakein/public_html/frontend/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/saltlakein/public_html/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/saltlakein/public_html/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin',
+    'PWD' => '/usr/local/cpanel/cgi-sys',
+    'SHLVL' => '0',
+    'PHP_FCGI_MAX_REQUESTS' => '5000',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'REQUEST_URI' => '/listify/categories.html',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REDIRECT_URL' => '/frontend/web/listify/categories.html',
+    'REMOTE_PORT' => '60789',
+    'SCRIPT_FILENAME' => '/home/saltlakein/public_html/frontend/web/index.php',
+    'SERVER_ADMIN' => 'webmaster@saltlake.in',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/saltlakein/public_html',
+    'CONTEXT_PREFIX' => '',
+    'REQUEST_SCHEME' => 'http',
+    'DOCUMENT_ROOT' => '/home/saltlakein/public_html',
+    'REMOTE_ADDR' => '43.251.172.144',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '166.62.10.49',
+    'SERVER_NAME' => 'saltlake.in',
+    'SERVER_SOFTWARE' => 'Apache/2.4.25',
+    'SERVER_SIGNATURE' => '',
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_COOKIE' => 'saltlake=qn3rq0g32m4bqfoar5dvd7a7c2; _csrf-frontend=d4090d3a2072baddacdc32db0e20d8e8eb05e21336bdcc7a514d873544804602a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qq5i2Vfcgdohkt7hflu0g5ZgeSy9MEVh%22%3B%7D',
+    'HTTP_REFERER' => 'http://saltlake.in/listify/search?string=spa',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+    'HTTP_HOST' => 'saltlake.in',
+    'UNIQUE_ID' => 'WUvdO7YyhzgADmQo49cAAAFF',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WUvdO7YyhzgADmQo49cAAAFF',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WUvdO7YyhzgADmQo49cAAAFF',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1498144059.4346449375152587890625,
+    'REQUEST_TIME' => 1498144059,
+]
+[24-Jun-2017 17:40:38 UTC] An Error occurred while handling another error:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/error".' in /home/saltlakein/public_html/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /home/saltlakein/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(93): yii\base\Module->runAction('site/error')
+#1 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(109): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#2 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#3 {main}
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "".' in /home/saltlakein/public_html/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /home/saltlakein/public_html/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('', Array)
+#1 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/saltlakein/public_html/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/saltlakein/public_html/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /home/saltlakein/public_html/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/saltlakein/public_html/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin',
+    'PWD' => '/usr/local/cpanel/cgi-sys',
+    'SHLVL' => '0',
+    'PHP_FCGI_MAX_REQUESTS' => '5000',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'REQUEST_URI' => '/',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REDIRECT_URL' => '/',
+    'REMOTE_PORT' => '5318',
+    'SCRIPT_FILENAME' => '/home/saltlakein/public_html/frontend/web/index.php',
+    'SERVER_ADMIN' => 'webmaster@saltlake.in',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/saltlakein/public_html',
+    'CONTEXT_PREFIX' => '',
+    'REQUEST_SCHEME' => 'http',
+    'DOCUMENT_ROOT' => '/home/saltlakein/public_html',
+    'REMOTE_ADDR' => '47.15.5.18',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '166.62.10.49',
+    'SERVER_NAME' => 'www.saltlake.in',
+    'SERVER_SOFTWARE' => 'Apache/2.4.25',
+    'SERVER_SIGNATURE' => '',
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_COOKIE' => 'session_locale=en; _identity-backend=fc1953e94706c516ab3e7889b2bafb850bb72b33ad5b4bcf01076eae4588f495a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22oI0J-0hrZxdhR2AQitd3tAPoQzlCWPtx%22%2C2592000%5D%22%3B%7D',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+    'HTTP_HOST' => 'www.saltlake.in',
+    'UNIQUE_ID' => 'WU6kFrYyhzgAAvfUGc4AAAAA',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WU6kFrYyhzgAAvfUGc4AAAAA',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1498326038.9350230693817138671875,
+    'REQUEST_TIME' => 1498326038,
+]
+[06-May-2019 09:12:57 America/Chicago] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[06-May-2019 09:12:57 America/Chicago] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
+[06-May-2019 09:13:01 America/Chicago] PHP Fatal error:  Uncaught exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home2/niwcr3mr/public_html/retail/vendor/yiisoft/yii2/web/Response.php on line 414.' in /home2/niwcr3mr/public_html/retail/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home2/niwcr3mr/public_html/retail/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home2/niwcr3mr/public_html/retail/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home2/niwcr3mr/public_html/retail/vendor/yiisoft/yii2/base/ErrorHandler.php(262): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#3 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#4 {main}
+  thrown in /home2/niwcr3mr/public_html/retail/vendor/yiisoft/yii2/web/Response.php on line 366
+[06-May-2019 09:17:20 America/Chicago] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[06-May-2019 09:17:20 America/Chicago] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
+[06-May-2019 09:17:20 America/Chicago] PHP Fatal error:  Uncaught exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home2/niwcr3mr/public_html/retail/vendor/yiisoft/yii2/web/Response.php on line 414.' in /home2/niwcr3mr/public_html/retail/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home2/niwcr3mr/public_html/retail/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home2/niwcr3mr/public_html/retail/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home2/niwcr3mr/public_html/retail/vendor/yiisoft/yii2/base/ErrorHandler.php(262): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#3 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#4 {main}
+  thrown in /home2/niwcr3mr/public_html/retail/vendor/yiisoft/yii2/web/Response.php on line 366

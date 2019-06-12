@@ -1,0 +1,52 @@
+{
+    "name": "NIWCRM/RETAIL",
+    "description": "FOR RETAIL",
+    "keywords": ["niwcrm", "crm", "crm for small business","low cost crm"],
+    "homepage": "http://www.niwcrm.com/",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "http://www.yiiframework.com/wiki/",
+        "irc": "irc://irc.freenode.net/yii",
+        "source": "https://github.com/yiisoft/yii2"
+    },
+    "minimum-stability": "stable",
+    
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "2.0.15.1",
+        "yiisoft/yii2-bootstrap": "~2.0.0",
+        "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
+        "kartik-v/yii2-widgets": "dev-master",
+        "johnitvn/yii2-rbac-plus": "*",
+        "yiidoc/yii2-redactor": "*",
+        "yiisoft/yii2-jui": "^2.0",
+        "miloschuman/yii2-highcharts-widget": "*",
+        "beaten-sect0r/yii2-db-manager": "*",
+        "unyii2/yii2-imap": "^0.5.2",
+        "kartik-v/yii2-export": "@dev",
+        "phpoffice/phpspreadsheet": "^1.6",
+        "skeeks/yii2-assets-auto-compress": "*"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "~2.0.0",
+        "yiisoft/yii2-gii": "~2.0.0",
+        "yiisoft/yii2-faker": "~2.0.0",
+        "codeception/base": "^2.2.3",
+        "codeception/verify": "~0.3.1"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}

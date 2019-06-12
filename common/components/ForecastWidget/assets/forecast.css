@@ -1,0 +1,28 @@
+.forecast-wrapper{
+	position:relative;float:left;width:100%;background-size:cover; padding:3px;
+	
+}
+.forecast-wrapper .day{
+	position:relative;float:left;width:35%;color:#ffffff;padding:1px 5px;
+}
+
+.forecast-wrapper .day h4,.forecast-wrapper .day h5,.forecast-wrapper .day h6{
+	margin:0px;padding:0px;
+}
+.forecast-wrapper .upper{
+	text-transform:uppercase;
+}
+
+.forecast-wrapper .temp{
+	position:relative;float:left;width:45%;color:#ffffff;font-size: 1em ;line-height: 1.5em;
+}
+.forecast-wrapper .temp span,.forecast-wrapper .day span{
+	font-size: 10px;;
+}
+.forecast-wrapper .icon{
+	position:relative;float:left;width:15%;padding: 1px;
+}
+
+.forecast-wrapper .summary{
+width:100%; font-size:12px; float:left; position:relative;clear:both; color:#ffffff; text-align:center;
+}
